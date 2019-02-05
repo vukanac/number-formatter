@@ -43,4 +43,9 @@ describe('#numFormatter', () => {
     const result = numFormatter(12345678);
     expect(result).to.equal('12,345,678');
   });
+
+  it('should convert 2 decimal places for German locale', () => {
+    const result = numFormatter(12345.67, 'de');
+    expect(result).to.equal('12.345,67');
+  });
 });

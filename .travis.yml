@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - stable
+  - 8
+  - 6
+  - latest
+
+branches:
+  only:
+    - master
+
+cache: npm
+
+before_script:
+  - npm install
+
+script:
+  - npm test
+  - npm lint

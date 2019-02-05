@@ -1,0 +1,37 @@
+{
+  "name": "@vukanac/number-formatter",
+  "version": "1.0.0",
+  "description": "The example of published npm package",
+  "keywords": [
+    "npm",
+    "number",
+    "formatter",
+    "example"
+  ],
+  "author": "Vladimir Vukanac <vukanac@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vukanac/number-formatter/issues"
+  },
+  "homepage": "https://github.com/vukanac/number-formatter#readme",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vukanac/number-formatter.git"
+  },
+  "scripts": {
+    "ci": "npm run lint && npm test",
+    "lint": "eslint index.js ./test",
+    "test": "mocha --reporter spec"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^5.2.0"
+  }
+}

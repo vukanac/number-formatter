@@ -1,23 +1,25 @@
-addons:
-  apt:
-    packages:
-      - language-pack-en
-      - language-pack-de
-      - language-pack-ar
-
 language: node_js
+
 node_js:
   - stable
-  - 8
-  - node #latest
 
 branches:
   only:
     - master
 
-cache: npm
+cache:
+  npm: true
+  directories:
+    - node_modules
+
+before_install:
+  - npm install --global npm
+  - npm install --global full-icu
 
 install:
+  - npm install full-icu
+  - ls $(pwd)/node_modules
+  - NODE_ICU_DATA="$(pwd)/node_modules/full-icu" node
   - npm install
 
 script:

@@ -1,5 +1,3 @@
-
-
 /**
  * Adds commas to a number
  * @param {number} number

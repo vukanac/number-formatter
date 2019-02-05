@@ -24,7 +24,7 @@
   },
   "scripts": {
     "ci": "npm run lint && npm test",
-    "lint": "eslint index.js ./test ./examples",
+    "lint": "eslint index.js ./test",
     "test": "mocha --reporter spec"
   },
   "devDependencies": {

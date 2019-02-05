@@ -1,5 +1,5 @@
 {
-  "name": "@vukanac/number-formatter",
+  "name": "number-formatter-with-locale",
   "version": "1.0.0",
   "description": "The example of published npm package",
   "keywords": [
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "ci": "npm run lint && npm test",
-    "lint": "eslint index.js ./test",
+    "lint": "eslint index.js ./test ./examples",
     "test": "mocha --reporter spec"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-# Number Formatter
+# Number Formatter (this is only a NPM Demo)
 
 [![Build Status](https://travis-ci.org/vukanac/number-formatter.svg?branch=master)](https://travis-ci.org/vukanac/number-formatter)
 
@@ -47,3 +47,26 @@ Supporting steps:
     travis init
     travis enable
     npx eslint --init
+
+
+## Troubleshooting
+
+    npm publish
+
+Required one time password (OTP) from 2FA enabled accounts.
+
+It the result is:
+
+    npm ERR! 402 Payment Required
+     - PUT https://registry.npmjs.org/@<YOUR_USERNAME>%2fnumber-formatter
+     - You must sign up for private packages
+
+Run:
+
+    npm publish --access=public
+
+or change the scope from private (organisation) based on your username
+to the global scope by changing the name in `package.json`:
+
+    -  "name": "@<YOUR_USERNAME>/number-formatter",
+    +  "name": "number-formatter-with-locale",

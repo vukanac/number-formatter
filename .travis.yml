@@ -16,4 +16,4 @@ before_script:
 
 script:
   - npm test
-  - npm lint
+  - npm run lint

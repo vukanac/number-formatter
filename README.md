@@ -1,5 +1,7 @@
 # Number Formatter
 
+[![Build Status](https://travis-ci.org/vukanac/number-formatter.svg?branch=master)](https://travis-ci.org/vukanac/number-formatter)
+
 A small library that adds commas to numbers
 
 
@@ -26,7 +28,7 @@ Output should be `35,666`
 
 All new functionality or changes must be linted and covered with unit tests.
 
-    npm lint
+    npm run lint
     npm test
 
 

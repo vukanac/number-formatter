@@ -15,7 +15,7 @@ install:
 
 script:
   - npm run lint
-  - npm test-with-coverage # run test with coverage report
+  - npm run test-with-coverage # run test with coverage report
   - npm audit
   - npm outdated
 

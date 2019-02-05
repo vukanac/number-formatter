@@ -1,5 +1,5 @@
 {
-  "name": "number-formatter-with-locale",
+  "name": "@vukanac/number-formatter",
   "version": "1.0.0",
   "description": "The example of published npm package",
   "keywords": [

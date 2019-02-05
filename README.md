@@ -71,3 +71,28 @@ to the global scope by changing the name in `package.json`:
 
     -  "name": "@<YOUR_USERNAME>/number-formatter",
     +  "name": "number-formatter-with-locale",
+
+
+## Update NPM version
+
+> The only way to update npm is to release a new version.
+
+`npm` will not allow you to re-publish to the same version number.
+
+With:
+
+    npm version (patch|minor|major) -m "<commit message>"
+
+    npm version patch -m "Version %s - add sweet badges"
+
+`%s` = the new version number,
+
+will create a new release by bumping the version in your `package.json`,
+add a new commit and tag it with this release number.
+
+> Note: Your Git working directory has to be clean before you can run `npm version`.
+
+After bumping the version number
+
+    git push --tags
+    npm publish

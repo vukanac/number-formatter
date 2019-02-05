@@ -18,8 +18,7 @@ before_install:
 
 install:
   - npm install full-icu
-  - ls $(pwd)/node_modules
-  - NODE_ICU_DATA="$(pwd)/node_modules/full-icu" node
+  - NODE_ICU_DATA="$(pwd)/node_modules/full-icu"
   - npm install
 
 script:

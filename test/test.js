@@ -44,8 +44,8 @@ describe('#numFormatter', () => {
     expect(result).to.equal('12,345,678');
   });
 
-  it('should convert with decimal places for Arabic locale', () => {
-    const result = numFormatter(123456.789, 'ar-EG');
-    expect(result).to.equal('١٢٣٬٤٥٦٫٧٨٩');
+  it('should convert with decimal places for German locale', () => {
+    const result = numFormatter(123456.789, 'de-DE');
+    expect(result).to.equal('123.456,789');
   });
 });

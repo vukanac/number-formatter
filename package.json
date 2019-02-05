@@ -23,15 +23,19 @@
     "url": "git+https://github.com/vukanac/number-formatter.git"
   },
   "scripts": {
-    "ci": "npm run lint && npm test",
+    "ci": "npm run lint && test-with-coverage",
     "lint": "eslint index.js ./test",
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "test-with-coverage": "nyc --reporter=text mocha",
+    "publish-coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.2.0"
   }
 }

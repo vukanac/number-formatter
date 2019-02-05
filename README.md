@@ -1,6 +1,7 @@
 # Number Formatter (this is only a NPM Demo)
 
 [![Build Status](https://travis-ci.org/vukanac/number-formatter.svg?branch=master)](https://travis-ci.org/vukanac/number-formatter)
+[![Coverage Status](https://coveralls.io/repos/github/vukanac/number-formatter/badge.svg?branch=master)](https://coveralls.io/github/vukanac/number-formatter?branch=master)
 
 A small library that adds commas to numbers
 

@@ -41,8 +41,9 @@ Steps done:
     npm install --save <number-formatter>
     npm unpublish
 
-Supported steps:
+Supporting steps:
 
+    hub create
     travis init
     travis enable
     npx eslint --init

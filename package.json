@@ -1,6 +1,6 @@
 {
   "name": "@vukanac/number-formatter",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "The example of published npm package",
   "keywords": [
     "npm",
@@ -20,14 +20,15 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vukanac/number-formatter.git"
+    "url": "https://github.com/vukanac/number-formatter.git"
   },
   "scripts": {
     "ci": "npm run lint && test-with-coverage",
     "lint": "eslint index.js ./test",
     "test": "mocha --reporter spec",
     "test-with-coverage": "nyc --reporter=text mocha",
-    "publish-coverage": "nyc report --reporter=text-lcov | coveralls"
+    "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -36,6 +37,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.2.0"
+    "nyc": "^13.2.0",
+    "semantic-release": "^15.13.3"
   }
 }

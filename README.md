@@ -98,3 +98,12 @@ After bumping the version number
 
     git push --tags
     npm publish
+
+
+### Autobump version with commit message (properly written)
+
+To write commit message with correct triggers use `commitlint`:
+
+    npm install @commitlint/cli @commitlint/config-conventional
+    echo 'foo: bar' | commitlint
+    commitlint --from=HEAD~1

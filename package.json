@@ -34,10 +34,10 @@
     "chai": "^4.2.0",
     "conventional-changelog-eslint": "^3.0.1",
     "coveralls": "^3.0.3",
-    "eslint": "^5.15.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "mocha": "^6.0.2",
+    "mocha": "^6.1.0",
     "nyc": "^13.3.0",
     "semantic-release": "^15.13.3"
   }

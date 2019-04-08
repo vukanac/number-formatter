@@ -40,5 +40,9 @@
     "mocha": "^6.1.0",
     "nyc": "^13.3.0",
     "semantic-release": "^15.13.3"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0"
   }
 }
